@@ -3,9 +3,9 @@ import {Button, Container, Form} from 'react-bootstrap'
 
 function ActivityForm({activities, setActivities}) {
     const [state,setState] = useState({
-        name: "",
-        hours: "",
-        cost: ""
+        Name: "",
+        Hours: "",
+        Cost: ""
     })
 
     function handleChange(e) {
@@ -46,9 +46,9 @@ function ActivityForm({activities, setActivities}) {
             window.alert('Invalid Entry Type. Try again!')
         }
         setState({
-            name: "",
-            hours: "",
-            cost: ""
+            Name: "",
+            Hours: "",
+            Cost: ""
         })        
     }
 
