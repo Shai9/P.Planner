@@ -17,7 +17,7 @@ function App() {
   const [employees,setEmployees] = useState([])
 
    useEffect(()=>{
-        fetch(`http://localhost:9292/employees`)
+        fetch(`https://shark-app-o9paa.ondigitalocean.app/employees`)
             .then((r)=> r.json())
             .then((data)=> setEmployees(data))
    },[])
